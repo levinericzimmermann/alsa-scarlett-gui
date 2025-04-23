@@ -11,6 +11,7 @@ stdenv.mkDerivation {
         gtk4
         pkg-config
         openssl
+        gvfs
     ];
     buildPhase = ''
       NIX_CFLAGS_COMPILE="$(pkg-config --cflags gtk4) $NIX_CFLAGS_COMPILE"
